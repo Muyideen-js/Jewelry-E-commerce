@@ -1,0 +1,73 @@
+.app-root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-main {
+  flex: 1;
+  max-width: 1240px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 1.5rem 1rem 2rem 1rem;
+}
+
+/* Layout helpers */
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Typography */
+h1, h2, h3 {
+  margin: 0 0 0.75rem 0;
+}
+
+p {
+  margin: 0 0 1rem 0;
+}
+
+/* Simple grid */
+.grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.grid-3 {
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 0.6rem 1.1rem;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: linear-gradient(180deg, #1b1b1b, #101010);
+  color: #ffffff;
+  cursor: pointer;
+  transition: transform 120ms ease, box-shadow 120ms ease;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.35);
+}
+
+.btn.outline {
+  background: transparent;
+  color: var(--text);
+}
+
+/* Cards */
+.card {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+  background: var(--surface);
+}
+
+.card-body {
+  padding: 0.9rem;
+}

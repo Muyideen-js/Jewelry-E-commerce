@@ -1,0 +1,32 @@
+.product {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.product-gallery {
+  border-radius: 12px;
+  border: 1px solid #f0f0f0;
+  min-height: 360px;
+}
+
+.product-gallery.placeholder {
+  background: repeating-linear-gradient(45deg, #fafafa, #fafafa 10px, #f2f2f2 10px, #f2f2f2 20px);
+}
+
+.product-info {
+  align-self: start;
+}
+
+.product-price {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+@media (max-width: 900px) {
+  .product {
+    grid-template-columns: 1fr;
+  }
+}
+
+

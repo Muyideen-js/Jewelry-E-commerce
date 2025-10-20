@@ -1,0 +1,26 @@
+.catalog {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 1.5rem;
+}
+
+.filters {
+  border: 1px solid #f0f0f0;
+  border-radius: 12px;
+  padding: 1rem;
+}
+
+.filter-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+}
+
+@media (max-width: 800px) {
+  .catalog {
+    grid-template-columns: 1fr;
+  }
+}
+
+
