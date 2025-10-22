@@ -10,6 +10,7 @@ import Product from './pages/Product'
 import Cart from './pages/Cart'
 
 function App() {
+  
   return ( 
     <AppProvider>
       <div className="app-root">

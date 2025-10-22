@@ -1,6 +1,6 @@
 .footer {
   border-top: 1px solid var(--border);
-  background: var(--surface);
+  background: var(--light-bg);
   color: var(--muted);
   padding: 3rem 0 1rem 0;
 }
@@ -15,7 +15,6 @@
 .footer-section h3 {
   color: var(--gold);
   margin-bottom: 1rem;
-  font-family: 'Playfair Display', serif;
 }
 
 .footer-section h4 {
@@ -61,7 +60,7 @@
   align-items: center;
   justify-content: center;
   border: 1px solid var(--border);
-  border-radius: 8px;
+  border-radius: 6px;
   color: var(--muted);
   transition: all 0.2s ease;
 }
@@ -69,7 +68,6 @@
 .footer-social a:hover {
   color: var(--gold);
   border-color: var(--gold);
-  transform: translateY(-2px);
 }
 
 .contact-item {

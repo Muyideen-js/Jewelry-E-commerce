@@ -1,7 +1,6 @@
 .nav {
   border-bottom: 1px solid var(--border);
-  background: rgba(17,17,17,0.75);
-  backdrop-filter: saturate(160%) blur(10px);
+  background: var(--surface);
   position: sticky;
   top: 0;
   z-index: 50;
@@ -11,72 +10,100 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 64px;
+  height: 84px;
 }
 
 .brand {
-  display: inline-flex;
+  display: flex;
   align-items: center;
-  gap: 0.5rem;
-  font-weight: 700;
+  font-weight: 600;
   color: var(--text);
 }
 
-.brand-logo { height: 32px; width: auto; }
+.brand-logo { 
+  height: 72px; 
+  width: auto; 
+}
 
 .links {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.links a { 
+  color: var(--text);
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.links a:hover,
+.links a.active { 
+  color: var(--gold); 
+}
+
+.actions {
   display: flex;
   align-items: center;
   gap: 1rem;
 }
 
-.links a { color: var(--muted); }
-.links a.active { color: #ffffff; font-weight: 600; }
-
-.actions {
+.icon-btn {
+  width: 40px;
+  height: 40px;
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-}
-
-.icon-btn {
-  width: 36px;
-  height: 36px;
-  display: inline-flex;
-  align-items: center;
   justify-content: center;
-  border-radius: 10px;
   border: 1px solid var(--border);
   background: var(--surface);
   color: var(--text);
+  border-radius: 6px;
+  transition: all 0.2s ease;
 }
 
-.icon-btn:hover { box-shadow: 0 6px 20px rgba(0,0,0,0.25); }
+.icon-btn:hover {
+  background: var(--light-bg);
+  border-color: var(--gold);
+}
 
 .cart-btn {
   position: relative;
 }
 
-.cart-badge {
+.wishlist-btn {
+  position: relative;
+}
+
+.wishlist-badge {
   position: absolute;
-  top: -6px;
-  right: -6px;
-  background: var(--gold);
-  color: var(--bg);
+  top: -8px;
+  right: -8px;
+  background: #e74c3c;
+  color: white;
   border-radius: 50%;
-  width: 20px;
-  height: 20px;
+  width: 18px;
+  height: 18px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 0.75rem;
-  font-weight: 700;
-  animation: bounce 0.3s ease;
+  font-size: 0.7rem;
+  font-weight: 600;
 }
 
-@keyframes bounce {
-  0%, 100% { transform: scale(1); }
-  50% { transform: scale(1.2); }
+.cart-badge {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background: var(--gold);
+  color: white;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7rem;
+  font-weight: 600;
 }
 
 
